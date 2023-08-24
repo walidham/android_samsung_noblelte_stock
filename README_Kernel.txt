@@ -20,3 +20,7 @@
 3. How to Clean
 	$ make clean
 ################################################################################
+
+export ANDROID_MAJOR_VERSION=n
+make O=out ARCH=arm64 exynos7420-noblelte_mea_jv_defconfig
+make -j$(nproc --all) O=out ARCH=arm64
